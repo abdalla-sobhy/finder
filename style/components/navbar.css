@@ -35,7 +35,6 @@
 }
 
 .nav-list li {
-  /* margin-right: 1.5rem; */
   position: relative;
   cursor: pointer;
   padding: 0.6rem 1rem;
@@ -47,7 +46,7 @@
 .nav-list li .dropdown-menu::before {
   content: "";
   position: absolute;
-  top: -1rem; /* same as margin-top */
+  top: -1rem;
   left: 0;
   width: 100%;
   height: 1rem;
@@ -67,9 +66,6 @@
   background-color: #f2f3f5;
 }
 
-.nav-list li:hover.home {
-  /* background-color: #fff; */
-}
 
 .nav-list a {
   color: rgb(17, 24, 39);
@@ -77,13 +73,8 @@
   font-weight: 500;
   font-size: 16px;
   font-family: inter;
-  /* width: 100px; */
-  /* padding: 40px 10px; */
 }
 
-.nav-list a:hover {
-  /* color: #d85151;  */
-}
 
 .join-button {
   background-color: #d85151;
@@ -101,13 +92,11 @@
   gap: 0.5rem;
 }
 
-/* New Approach */
 @media (max-width: 1200px) {
   .join-button img + span {
-    display: none; /* Hide the span directly next to the image */
+    display: none;
   }
 
-  /* Add content through pseudo-element */
   .join-button:after {
     content: "Join";
     display: inline;
@@ -192,17 +181,14 @@
   gap: 2.5rem;
 }
 .dropdown-menu li {
-  /* padding: 0.5rem 1rem; */
   padding: 0.5rem 0.5rem 0rem 1rem;
 }
 .dropdown-menu li:hover {
   background-color: white;
 }
 .homedropdownoption {
-  /* background-color: red; */
   width: 91%;
   padding: 0.5rem 0.8rem;
-  /* width: fit-content; */
   display: flex;
   border-radius: 6px;
 }
@@ -210,7 +196,6 @@
 .listingsdropdownoption {
   width: 91%;
   padding: 0.5rem 0.8rem;
-  /* width: fit-content; */
   display: flex;
   border-radius: 6px;
 }
@@ -262,30 +247,18 @@
   visibility: visible;
 }
 .innersidemenu {
-  /* height: 50px; */
   width: fit-content;
   position: absolute;
-  /* right: -3.2rem; */
   left: 95%;
-
-  /* position: absolute; */
   top: auto;
   margin-top: -2.8rem;
-  /* bottom: 2rem; */
-  /* left: 0; */
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* z-index: 1000; */
   opacity: 0;
   transform: translateY(15px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   visibility: hidden;
-  /* margin-top: 1rem; */
-  /* white-space: nowrap; */
   padding-bottom: 1rem;
-  /* display: flex; */
-  /* flex-direction: row !important; */
-  /* gap: 2.5rem; */
 }
 .innersidemenu:hover {
   opacity: 1;
@@ -299,7 +272,6 @@
   cursor: pointer;
 }
 
-/* Overlay behind side menu */
 .side-menu-overlay {
   position: fixed;
   top: 0;
@@ -311,7 +283,6 @@
   z-index: 999;
 }
 
-/* Side Menu Styles */
 .side-menu {
   position: fixed;
   top: 0;

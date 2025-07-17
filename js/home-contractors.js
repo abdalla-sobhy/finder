@@ -13,14 +13,10 @@ const button = document.getElementById('search-button');
     } else {
       if (button.parentElement !== originalContainer) {
         originalContainer.appendChild(button);
-        // button.style.backgroundColor = '';
-        // button.style.fontSize = '';
-        // button.style.padding = '';
       }
     }
   }
 
-  // Run on load and resize
   window.addEventListener('load', moveButtonBasedOnWidth);
   window.addEventListener('resize', moveButtonBasedOnWidth);
 

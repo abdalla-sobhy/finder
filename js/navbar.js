@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       document.getElementById('navbar-placeholder').innerHTML = data;
 
-      // handle home background
       const navListItems = document.querySelectorAll('.nav-list li');
       navListItems.forEach(item => {
         item.addEventListener('mouseover', () => {
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
-      // all option-menu pairs
       const pairs = [
         { optionClass: 'moreoptions', menuClass: 'innersidemenu' },
         { optionClass: 'aboutoptions', menuClass: 'aboutmenu' },
@@ -35,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const menu = document.querySelector(`.${menuClass}`);
 
         if (trigger && menu) {
-          // Handle hover on trigger
           trigger.addEventListener('mouseenter', () => {
             menu.style.opacity = '1';
             menu.style.transform = 'translateY(0)';
@@ -43,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
           });
 
           trigger.addEventListener('mouseleave', () => {
-            // Use timeout to allow user to hover submenu
             setTimeout(() => {
               if (!menu.matches(':hover') && !trigger.matches(':hover')) {
                 menu.style.opacity = '';
@@ -53,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
           });
 
-          // Handle hover on menu
           menu.addEventListener('mouseleave', () => {
             menu.style.opacity = '';
             menu.style.transform = '';
@@ -116,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Add click event listener to menuHome
   const menuHomeElement = document.querySelector('.menuHome');
   if (menuHomeElement) {
     menuHomeElement.addEventListener('click', handleMenuHomeClick);

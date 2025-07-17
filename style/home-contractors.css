@@ -60,18 +60,8 @@ html {
   height: 40.9rem;
 }
 .search-container {
-  /*background-color: white; */
-  /* border-radius: 13px; */
-  /* padding: 10px; */
   display: flex;
   align-items: center;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  /* margin-bottom: 20px; */
-  /* width: fit-content; */
-  /* max-width: 600px; */
-  /* height: 3.5rem; */
-  /* padding-left: 1.5rem;
-*/
 }
 
 .search-container input[type="text"] {
@@ -84,7 +74,7 @@ html {
 }
 
 .search-container input[type="text"]:nth-child(3) {
-  margin-left: 50px; /* Spacing for Zip code */
+  margin-left: 50px;
 }
 
 .search-container input[type="text"]::placeholder {
@@ -142,9 +132,9 @@ html {
 }
 .separator {
   width: 1px;
-  background-color: #ccc; /* Adjust the color */
-  margin: 0 10px; /* Spacing around the line */
-  height: 30px; /* Adjust the height */
+  background-color: #ccc;
+  margin: 0 10px;
+  height: 30px;
 }
 .searchContainer {
   background-color: white;
@@ -402,7 +392,7 @@ html {
 }
 
 .star {
-  color: #f97316; /* Orange star */
+  color: #f97316;
 }
 
 .review-count {
@@ -459,14 +449,12 @@ html {
   background: #f97316;
 }
 
-/* Responsive carousel for smaller screens */
 @media screen and (max-width: 1210px) {
   .project-card {
     flex: 0 0 48%;
   }
 }
 
-/* On larger screens, show cards in row with space */
 @media screen and (min-width: 1210px) {
   .projects-cards-wrapper {
     overflow: visible;
@@ -478,7 +466,6 @@ html {
   }
 }
 
-/* On larger screens, show cards in row with space */
 @media screen and (min-width: 830px) {
   .projects-cards-wrapper {
     overflow: visible;
