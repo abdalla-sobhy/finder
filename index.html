@@ -1,653 +1,1285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finder | Contractors - Homepage</title>
-  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34"><path d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z" fill="%23D85151"/><g fill-rule="evenodd"><path d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z" fill="%23000" fill-opacity=".05"/><g fill="%23fff"><path d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z"/><path d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z"/></g></g><path d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z" fill="%23fff"/><path fill-rule="evenodd" d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z" fill="%23D85151"/></svg>' />
-  <link rel="stylesheet" href="style/components/navbar.css">
-    <link rel="stylesheet" href="style/home-contractors.css">
-
-</head>
-<body>
-  <div style="position: sticky; top: 0; width: 100%; z-index: 999;" id="navbar-placeholder"></div>
-  <div class="bodyContainer">
-  <section class="firstSection">
-    <div class="FirstSectionDiv">
-      <div class="firstSectionLeftImageContainer">
-        <img src="https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9" class="featured-img w-full" alt="Must-Have Tools for DIY" loading="eager" decoding="async" srcset="https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=912 912w,
-                  https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=800 800w,
-                  https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=720 720w,
-                  https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=600 600w,
-                  https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=420 420w,
-                  https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=320 320w" sizes="width:7rem;" style="width: 22rem; height: 15rem; border-radius: 30% / 40% 40% 40% 40%;">
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
-        <div>
-          <h1 class="exploreH1" style="color: white;">Explore top-rated<br>certified pros nearby</h1>
-        </div>
-        <div id="mobile-placeholder" class="searchContainer">
-          <div id="container" class="search-container">
-            <div style="display: flex; flex-direction: row; padding-right: 4rem;">
-              <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Search Icon" style="width: 20px; height: 20px;">
-              <input type="text" placeholder="What service do you need?" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finder | Contractors - Homepage</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34"><path d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z" fill="%23D85151"/><g fill-rule="evenodd"><path d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z" fill="%23000" fill-opacity=".05"/><g fill="%23fff"><path d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z"/><path d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z"/></g></g><path d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z" fill="%23fff"/><path fill-rule="evenodd" d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z" fill="%23D85151"/></svg>'
+    />
+    <link rel="stylesheet" href="style/components/navbar.css" />
+    <link rel="stylesheet" href="style/home-contractors.css" />
+  </head>
+  <body>
+    <div
+      style="position: sticky; top: 0; width: 100%; z-index: 999"
+      id="navbar-placeholder"
+    ></div>
+    <div class="bodyContainer">
+      <section class="firstSection">
+        <div class="FirstSectionDiv">
+          <div class="firstSectionLeftImageContainer">
+            <img
+              src="https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9"
+              class="featured-img w-full"
+              alt="Must-Have Tools for DIY"
+              loading="eager"
+              decoding="async"
+              srcset="
+                https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=912 912w,
+                https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=800 800w,
+                https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=720 720w,
+                https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=600 600w,
+                https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=420 420w,
+                https://www.bankrate.com/2022/06/02144249/DIY-Tools-Hero-1203753494.jpg?auto=webp&amp;optimize=high&amp;crop=16:9&amp;width=320 320w
+              "
+              sizes="width:7rem;"
+              style="
+                width: 22rem;
+                height: 15rem;
+                border-radius: 30% / 40% 40% 40% 40%;
+              "
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div>
+              <h1 class="exploreH1" style="color: white">
+                Explore top-rated<br />certified pros nearby
+              </h1>
             </div>
-            <div class="separator"></div>
-              <img style="width: 25px;height: 25px;margin-left: 1rem;" src="https://img.icons8.com/?size=100&id=113148&format=png&color=000000" alt="Location Icon" style="width: 25px; height: 25px;">
-              <input style="width: 5rem;" type="text" placeholder="Zip code" />
-            <button id="search-button">Search</button>
+            <div id="mobile-placeholder" class="searchContainer">
+              <div id="container" class="search-container">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    padding-right: 4rem;
+                  "
+                >
+                  <img
+                    src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"
+                    alt="Search Icon"
+                    style="width: 20px; height: 20px"
+                  />
+                  <input type="text" placeholder="What service do you need?" />
+                </div>
+                <div class="separator"></div>
+                <img
+                  style="width: 25px; height: 25px; margin-left: 1rem"
+                  src="https://img.icons8.com/?size=100&id=113148&format=png&color=000000"
+                  alt="Location Icon"
+                  style="width: 25px; height: 25px"
+                />
+                <input style="width: 5rem" type="text" placeholder="Zip code" />
+                <button id="search-button">Search</button>
+              </div>
+            </div>
+            <div class="searchButtons">
+              <button>Handyperson</button>
+              <button>Electrician</button>
+              <button>Plumbing</button>
+              <button>Landscaping</button>
+              <button>Roofing</button>
+            </div>
+          </div>
+          <div
+            class="firstSectionRightImageContainer"
+            style="width: fit-content; height: fit-content"
+          >
+            <img
+              style="border-radius: 10px; width: 21rem"
+              src="assets/images/firstSectionRightImage.jpg"
+              alt=""
+            />
           </div>
         </div>
-        <div class="searchButtons">
-          <button>Handyperson</button>
-          <button>Electrician</button>
-          <button>Plumbing</button>
-          <button>Landscaping</button>
-          <button>Roofing</button>
-        </div>
-      </div>
-      <div class="firstSectionRightImageContainer" style="width:fit-content; height: fit-content;">
-        <img style="border-radius: 10px; width: 21rem;" src="assets/images/firstSectionRightImage.jpg" alt="">
-      </div>
-    </div>
-  </section>
+      </section>
 
-
-  <section  class="services-section">
-    <div class="services-grid">
-    <div class="grid-headerContainer">
-      <div class="grid-header">
-        <h2>Browse pros in your area</h2>
-        <a href="#" class="view-all">View all &rarr;</a>
-      </div>
-    </div>
-    <div class="grid-content">
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-1" alt="Flooring icon"></div>
-            <span>Flooring</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-2" alt="Concrete icon"></div>
-            <span>Concrete</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-3" alt="Cleaning icon"></div>
-            <span>Cleaning</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-4" alt="Painting icon"></div>
-            <span>Painting</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-5" alt="Plumbing icon"></div>
-            <span>Plumbing</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-6" alt="Pest control icon"></div>
-            <span>Pest control</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-7" alt="Electrician icon"></div>
-            <span>Electrician</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-8" alt="Roofing icon"></div>
-            <span>Roofing</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-9" alt="Carpentry icon"></div>
-            <span>Carpentry</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-10" alt="Handyperson icon"></div>
-            <span>Handyperson</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-11" alt="Heating & furnace icon"></div>
-            <span>Heating & furnace</span>
-        </div>
-        <div class="service-item">
-            <div class="icon"><img src="icon-url-12" alt="Landscaping icon"></div>
-            <span>Landscaping</span>
-        </div>
-    </div>
-    </div>
-</section>
-
-
-
-<section style="display: flex; justify-content: center;">
-  <div style="display: flex; flex-direction: row; width: 90%; gap: 8rem;">
-
-    <div class="getMatched">
-      <div style="width: 100%; padding-bottom: 5rem;"><div style="font-family: inter; font-weight: 600; color: rgb(17, 24, 39); font-size: 28px; line-height: 36px; padding-bottom: 0.5rem;">Get matched<br>with local pros</div><span style="color: #4E5562; font-weight: 400; line-height: 21px; font-size: 14px; font-family: inter;">for your next home project.</span></div>
-      <div style="height: 15rem; width: 23rem;">
-        <img height="100%" width="100%" src="assets/images/banner.png" alt="Image">
-      </div>
-    </div>
-
-    <div style="display: flex; flex-direction: column; width: 100%; gap: 2.5rem; padding-top: 3.5rem;">
-
-      <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; align-items: center;">
-        <div class="PopularProjectsTitle">Popular projects near you</div>
-        <div><a href="#" class="view-all">View all &rarr;</a></div>
-      </div>
-
-      <div class="projectsNeargrid-content">
-
-        <div class="popularProjectsCard">
-            <div class="popularProjectsImageContainer">
-              <img src="assets/images/Popular_projects/decksAndPorches.webp" alt="">
+      <section class="services-section">
+        <div class="services-grid">
+          <div class="grid-headerContainer">
+            <div class="grid-header">
+              <h2>Browse pros in your area</h2>
+              <a href="#" class="view-all">View all &rarr;</a>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 0.3rem;">
-              <div class="popularProjectsTitle">
-                Decks & porches
+          </div>
+          <div class="grid-content">
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-1" alt="Flooring icon" />
               </div>
-              <div style="display: flex; flex-direction: row; font-weight: 100; color: #4E5562; gap: 0.3rem;">
-                <img width="16px" src="assets/images/goldenStar.svg" alt="">
-                4.7 <span style="color: #4E5562; font-weight: 400; line-height: 21px; font-size: 12px; font-family: inter;">(95)</span>
+              <div class="custom-text-wrapper">
+                <span>Flooring</span>
+                <div class="custom-underline"></div>
               </div>
-              <div style="font-weight: 100;">From $1,890</div>
             </div>
-        </div>
-
-        <div class="popularProjectsCard">
-            <div class="popularProjectsImageContainer">
-              <img src="assets/images/Popular_projects/decksAndPorches.webp" alt="">
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 0.3rem;">
-              <div class="popularProjectsTitle">
-                Decks & porches
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-2" alt="Concrete icon" />
               </div>
-              <div style="display: flex; flex-direction: row; font-weight: 100; color: #4E5562; gap: 0.3rem;">
-                <img width="16px" src="assets/images/goldenStar.svg" alt="">
-                4.7 <span style="color: #4E5562; font-weight: 400; line-height: 21px; font-size: 12px; font-family: inter;">(95)</span>
+              <div class="custom-text-wrapper">
+                <span>Concrete</span>
+                <div class="custom-underline"></div>
               </div>
-              <div style="font-weight: 100;">From $1,890</div>
             </div>
-        </div>
-        
-        <div class="popularProjectsCard">
-            <div class="popularProjectsImageContainer">
-              <img src="assets/images/Popular_projects/decksAndPorches.webp" alt="">
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 0.3rem;">
-              <div class="popularProjectsTitle">
-                Decks & porches
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-3" alt="Cleaning icon" />
               </div>
-              <div style="display: flex; flex-direction: row; font-weight: 100; color: #4E5562; gap: 0.3rem;">
-                <img width="16px" src="assets/images/goldenStar.svg" alt="">
-                4.7 <span style="color: #4E5562; font-weight: 400; line-height: 21px; font-size: 12px; font-family: inter;">(95)</span>
+              <div class="custom-text-wrapper">
+                <span>Cleaning</span>
+                <div class="custom-underline"></div>
               </div>
-              <div style="font-weight: 100;">From $1,890</div>
             </div>
-        </div>
-
-        <div class="popularProjectsCard">
-            <div class="popularProjectsImageContainer">
-              <img src="assets/images/Popular_projects/decksAndPorches.webp" alt="">
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 0.3rem;">
-              <div class="popularProjectsTitle">
-                Decks & porches
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-4" alt="Painting icon" />
               </div>
-              <div style="display: flex; flex-direction: row; font-weight: 100; color: #4E5562; gap: 0.3rem;">
-                <img width="16px" src="assets/images/goldenStar.svg" alt="">
-                4.7 <span style="color: #4E5562; font-weight: 400; line-height: 21px; font-size: 12px; font-family: inter;">(95)</span>
+              <div class="custom-text-wrapper">
+                <span>Painting</span>
+                <div class="custom-underline"></div>
               </div>
-              <div style="font-weight: 100;">From $1,890</div>
             </div>
-        </div>
-
-        <div class="popularProjectsCard">
-            <div class="popularProjectsImageContainer">
-              <img src="assets/images/Popular_projects/decksAndPorches.webp" alt="">
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 0.3rem;">
-              <div class="popularProjectsTitle">
-                Decks & porches
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-5" alt="Plumbing icon" />
               </div>
-              <div style="display: flex; flex-direction: row; font-weight: 100; color: #4E5562; gap: 0.3rem;">
-                <img width="16px" src="assets/images/goldenStar.svg" alt="">
-                4.7 <span style="color: #4E5562; font-weight: 400; line-height: 21px; font-size: 12px; font-family: inter;">(95)</span>
+              <div class="custom-text-wrapper">
+                <span>Plumbing</span>
+                <div class="custom-underline"></div>
               </div>
-              <div style="font-weight: 100;">From $1,890</div>
             </div>
-        </div>
-
-        <div class="popularProjectsCard">
-            <div class="popularProjectsImageContainer">
-              <img src="assets/images/Popular_projects/decksAndPorches.webp" alt="">
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 0.3rem;">
-              <div class="popularProjectsTitle">
-                Decks & porches
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-6" alt="Pest control icon" />
               </div>
-              <div style="display: flex; flex-direction: row; font-weight: 100; color: #4E5562; gap: 0.3rem;">
-                <img width="16px" src="assets/images/goldenStar.svg" alt="">
-                4.7 <span style="color: #4E5562; font-weight: 400; line-height: 21px; font-size: 12px; font-family: inter;">(95)</span>
+              <div class="custom-text-wrapper">
+                <span>Pest control</span>
+                <div class="custom-underline"></div>
               </div>
-              <div style="font-weight: 100;">From $1,890</div>
             </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section style="display: flex; justify-content: center; width: 100%;">
-  <div style="display: flex; flex-direction: column; width: 86%; gap: 2rem;">
-    <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; align-items: center;">
-      <div class="PopularProjectsTitle">Popular home projects</div>
-      <div><a href="#" class="view-all">View all &rarr;</a></div>
-    </div>
-    <div class="projects-cards-container">
-  <div class="projects-cards-wrapper">
-
-    <div class="project-card">
-      <div style="position: relative; overflow: hidden;">
-        <div class="card-image"><img width="100%" height="100%" src="assets/images/popularHomeProjects/onetimeCleaningService.jpg" alt=""></div>
-        <div class="popularHomeCardTitle">One-time cleaning service</div>
-        <button class="favorite-btn" aria-label="Favorite">&#9825;</button>
-        </div>
-      
-      <div class="card-details">
-        <div class="rating"><span class="star"><img width="16px" src="assets/images/goldenStar.svg" alt=""></span>4.9 <span class="review-count">(256)</span></div>
-        <div class="price">From $80</div>
-        <button class="book-btn">Book now</button>
-      </div>
-    </div>
-
-
-    <div class="project-card">
-      <div style="position: relative; overflow: hidden;">
-        <div class="card-image"><img width="100%" height="100%" src="assets/images/popularHomeProjects/handyperson.avif" alt=""></div>
-        <div class="popularHomeCardTitle">Handyperson for small Projects</div>
-        <button class="favorite-btn" aria-label="Favorite">&#9825;</button>
-        </div>
-      
-      <div class="card-details">
-        <div class="rating"><span class="star"><img width="16px" src="assets/images/goldenStar.svg" alt=""></span>4.7 <span class="review-count">(63)</span></div>
-        <div class="price">From $250</div>
-        <button class="book-btn">Book now</button>
-      </div>
-    </div>
-
-
-    <div class="project-card">
-      <div style="position: relative; overflow: hidden;">
-        <div class="card-image"><img width="100%" height="100%" src="assets/images/popularHomeProjects/fenceInstallation.jpg" alt=""></div>
-        <div class="popularHomeCardTitle">Fence installation & repair</div>
-        <button class="favorite-btn" aria-label="Favorite">&#9825;</button>
-        </div>
-      
-      <div class="card-details">
-        <div class="rating"><span class="star"><img width="16px" src="assets/images/goldenStar.svg" alt=""></span>4.8 <span class="review-count">(29)</span></div>
-        <div class="price">From $310</div>
-        <button class="book-btn">Book now</button>
-      </div>
-    </div>
-
-
-  </div>
-
-  <div class="pagination-dots"></div>
-</div>
-  </div>
-</section>
-
-
-
-<section style="display: flex; justify-content: center; width: 100%; background-color: #F5F7FA; padding-top: 6rem; padding-bottom: 6rem;">
-  <div style="display: flex; flex-direction: column; width: 86%; gap: 2rem;">
-    <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; align-items: center;">
-      <div class="PopularProjectsTitle">Expert advice</div>
-      <div><a href="#" class="view-all">View all &rarr;</a></div>
-    </div>
-    <div class="expert-advice-container">
-  <div class="advice-card">
-    <div class="image-container">
-      <img src="assets/images/expertAdvice/cleanliness.jpg" alt="Cleanliness">
-    </div>
-    <div class="advice-content">
-      <div class="advice-category">Cleaning</div>
-      <div class="advice-title">Expert advice from masters of cleanliness</div>
-      <div class="advice-description">Unlock the secrets to a spotless home with tips from cleaning professionals. From tackling stubborn...</div>
-      <div class="advice-date">Oct 19, 2024</div>
-    </div>
-  </div>
-
-  <div class="advice-card">
-    <div class="image-container">
-      <img src="assets/images/expertAdvice/flooring.webp" alt="Cleanliness">
-    </div>
-    <div class="advice-content">
-      <div class="advice-category">Flooring</div>
-      <div class="advice-title">How to quickly clean laminate flooring</div>
-      <div class="advice-description">Learn the fastest and most effective methods to clean laminate flooring without damaging its surface...</div>
-      <div class="advice-date">Sep 13, 2024</div>
-    </div>
-  </div>
-
-  <div class="advice-card">
-    <div class="image-container">
-      <img src="assets/images/expertAdvice/air_conditioning.jpg" alt="Cleanliness">
-    </div>
-    <div class="advice-content">
-      <div class="advice-category">Air Conditioning</div>
-      <div class="advice-title">Choose air conditioner with air ionization</div>
-      <div class="advice-description">Explore the benefits of air conditioners with air ionization technology. Find out how these units improve air...</div>
-      <div class="advice-date">Sep 05, 2024</div>
-    </div>
-  </div>
-
-  <div class="advice-card">
-    <div class="image-container">
-      <img src="assets/images/expertAdvice/landscaping.jpg" alt="Cleanliness">
-    </div>
-    <div class="advice-content">
-      <div class="advice-category">Landscaping</div>
-      <div class="advice-title">Landscaping ideas from top local experts</div>
-      <div class="advice-description">Get inspired by creative landscaping ideas from the best local experts. Whether you're revamping your garden...</div>
-      <div class="advice-date">Aug 26, 2024</div>
-    </div>
-  </div>
-
-
-</div>
-  </div>
-</section>
-
-
-
-  <section class="how-it-works">
-    <div style="width: 86%; gap: 2rem;">
-  <div style="font-family: inter; font-weight: 600; font-size: 32px; line-height: 40px; color: rgb(17, 24, 39);">How it works</div>
-  <p style="font-family: inter; font-weight: 400; font-size: 18px; line-height: 27px; color: rgb(78, 85, 98);">Effortlessly find, connect, and hire the perfect contractor for your job - all in just three easy steps.</p>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="assets/images/howItWorks/explore.png" alt="Explore">
-        <h3 class="howItWorksCardH3">Explore</h3>
-        <p class="howItWorksCardParagraph">Browse through our curated list of contractors.</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="assets/images/howItWorks/connect.png" alt="Connect">
-        <h3 class="howItWorksCardH3">Connect</h3>
-        <p class="howItWorksCardParagraph">Connect with them through our platform.</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="assets/images/howItWorks/quotes.png" alt="Get quotes and hire">
-        <h3 class="howItWorksCardH3">Get quotes and hire</h3>
-        <p class="howItWorksCardParagraph">Receive quotes from interested contractors.</p>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  </div>
-</section>
-
-
-
-
-<section style="display: flex; justify-content: center; width: 100%; padding-bottom: 1.5rem;">
-  <div style="display: flex; flex-direction: row; width: 100%; justify-content: center; height: 33rem;">
-
-    <div class="addBusiness-rightSide">
-      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-
-        <div style="font-family: inter; font-weight: 600; font-size: 32px; line-height: 40px; color: white;">Grow your business with us.<br>Become a Pro today</div>      
-          <div style="display: flex; flex-direction: row; gap: 0.7rem;">
-            <button class="AddBusiness-button">
-              <img width="20px" height="20px" src="../assets/images/plus.svg" alt="">
-              <span style="font-family: inter; font-weight: 500; font-size: 16px; line-height: 18px; color: white; padding: 0.5rem;">Add business</span>
-            </button>
-            <button class="learnMore-button">
-              <span style="font-family: inter; font-weight: 500; font-size: 16px; line-height: 18px;">Learn more</span>
-              <svg class="learnMorePlusSVG" width="15px" height="15px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" /></svg>
-            </button>
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-7" alt="Electrician icon" />
+              </div>
+              <div class="custom-text-wrapper">
+                <span>Electrician</span>
+                <div class="custom-underline"></div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-8" alt="Roofing icon" />
+              </div>
+              <div class="custom-text-wrapper">
+                <span>Roofing</span>
+                <div class="custom-underline"></div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-9" alt="Carpentry icon" />
+              </div>
+              <div class="custom-text-wrapper">
+                <span>Carpentry</span>
+                <div class="custom-underline"></div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-10" alt="Handyperson icon" />
+              </div>
+              <div class="custom-text-wrapper">
+                <span>Handyperson</span>
+                <div class="custom-underline"></div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-11" alt="Heating & furnace icon" />
+              </div>
+              <div class="custom-text-wrapper">
+                <span>Heating & furnace</span>
+                <div class="custom-underline"></div>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="icon">
+                <img src="icon-url-12" alt="Landscaping icon" />
+              </div>
+              <div class="custom-text-wrapper">
+                <span>Landscaping</span>
+                <div class="custom-underline"></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-    <div class="addBusinessImage" style="width: 50%; height: 100%;">
-      <img height="100%" width="100%" src="assets/images/DIY-Tools-Hero-1203753494.webp" alt="">
-    </div>
+      <section style="display: flex; justify-content: center">
+        <div style="display: flex; flex-direction: row; width: 90%; gap: 8rem">
+          <div class="getMatched">
+            <div style="width: 100%; padding-bottom: 5rem">
+              <div
+                style="
+                  font-family: inter;
+                  font-weight: 600;
+                  color: rgb(17, 24, 39);
+                  font-size: 28px;
+                  line-height: 36px;
+                  padding-bottom: 0.5rem;
+                "
+              >
+                Get matched<br />with local pros
+              </div>
+              <span
+                style="
+                  color: #4e5562;
+                  font-weight: 400;
+                  line-height: 21px;
+                  font-size: 14px;
+                  font-family: inter;
+                "
+                >for your next home project.</span
+              >
+            </div>
+            <div style="height: 15rem; width: 23rem">
+              <img
+                height="100%"
+                width="100%"
+                src="assets/images/banner.png"
+                alt="Image"
+              />
+            </div>
+          </div>
 
-  </div>
-</section>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              gap: 2.5rem;
+              padding-top: 3.5rem;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+              "
+            >
+              <div class="PopularProjectsTitle">Popular projects near you</div>
+              <div><a href="#" class="view-all">View all &rarr;</a></div>
+            </div>
 
+            <div class="projectsNeargrid-content">
+              <div class="popularProjectsCard">
+                <div class="popularProjectsImageContainer">
+                  <img
+                    src="assets/images/Popular_projects/decksAndPorches.webp"
+                    alt=""
+                  />
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.3rem">
+                  <div class="popularProjectsTitle">Decks & porches</div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      font-weight: 100;
+                      color: #4e5562;
+                      gap: 0.3rem;
+                    "
+                  >
+                    <img
+                      width="16px"
+                      src="assets/images/goldenStar.svg"
+                      alt=""
+                    />
+                    4.7
+                    <span
+                      style="
+                        color: #4e5562;
+                        font-weight: 400;
+                        line-height: 21px;
+                        font-size: 12px;
+                        font-family: inter;
+                      "
+                      >(95)</span
+                    >
+                  </div>
+                  <div style="font-weight: 100">From $1,890</div>
+                </div>
+              </div>
 
+              <div class="popularProjectsCard">
+                <div class="popularProjectsImageContainer">
+                  <img
+                    src="assets/images/Popular_projects/decksAndPorches.webp"
+                    alt=""
+                  />
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.3rem">
+                  <div class="popularProjectsTitle">Decks & porches</div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      font-weight: 100;
+                      color: #4e5562;
+                      gap: 0.3rem;
+                    "
+                  >
+                    <img
+                      width="16px"
+                      src="assets/images/goldenStar.svg"
+                      alt=""
+                    />
+                    4.7
+                    <span
+                      style="
+                        color: #4e5562;
+                        font-weight: 400;
+                        line-height: 21px;
+                        font-size: 12px;
+                        font-family: inter;
+                      "
+                      >(95)</span
+                    >
+                  </div>
+                  <div style="font-weight: 100">From $1,890</div>
+                </div>
+              </div>
 
+              <div class="popularProjectsCard">
+                <div class="popularProjectsImageContainer">
+                  <img
+                    src="assets/images/Popular_projects/decksAndPorches.webp"
+                    alt=""
+                  />
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.3rem">
+                  <div class="popularProjectsTitle">Decks & porches</div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      font-weight: 100;
+                      color: #4e5562;
+                      gap: 0.3rem;
+                    "
+                  >
+                    <img
+                      width="16px"
+                      src="assets/images/goldenStar.svg"
+                      alt=""
+                    />
+                    4.7
+                    <span
+                      style="
+                        color: #4e5562;
+                        font-weight: 400;
+                        line-height: 21px;
+                        font-size: 12px;
+                        font-family: inter;
+                      "
+                      >(95)</span
+                    >
+                  </div>
+                  <div style="font-weight: 100">From $1,890</div>
+                </div>
+              </div>
 
+              <div class="popularProjectsCard">
+                <div class="popularProjectsImageContainer">
+                  <img
+                    src="assets/images/Popular_projects/decksAndPorches.webp"
+                    alt=""
+                  />
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.3rem">
+                  <div class="popularProjectsTitle">Decks & porches</div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      font-weight: 100;
+                      color: #4e5562;
+                      gap: 0.3rem;
+                    "
+                  >
+                    <img
+                      width="16px"
+                      src="assets/images/goldenStar.svg"
+                      alt=""
+                    />
+                    4.7
+                    <span
+                      style="
+                        color: #4e5562;
+                        font-weight: 400;
+                        line-height: 21px;
+                        font-size: 12px;
+                        font-family: inter;
+                      "
+                      >(95)</span
+                    >
+                  </div>
+                  <div style="font-weight: 100">From $1,890</div>
+                </div>
+              </div>
 
-<section style="display: flex; justify-content: center; width: 100%;">
-    <div class="app-promo">
-      <div class="promo-content">
-        <h2>Get Finder App</h2>
-        <p>Explore top-rated certified pros</p>
-        <div class="app-buttons">
-          <button class="app-store"><img width="24px" src="assets/images/app/apple-173-svgrepo-com.svg" alt="">App Store</button>
-          <button class="google-play"><img width="24px" src="assets/images/app/google-play-svgrepo-com.svg" alt="">Google Play</button>
+              <div class="popularProjectsCard">
+                <div class="popularProjectsImageContainer">
+                  <img
+                    src="assets/images/Popular_projects/decksAndPorches.webp"
+                    alt=""
+                  />
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.3rem">
+                  <div class="popularProjectsTitle">Decks & porches</div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      font-weight: 100;
+                      color: #4e5562;
+                      gap: 0.3rem;
+                    "
+                  >
+                    <img
+                      width="16px"
+                      src="assets/images/goldenStar.svg"
+                      alt=""
+                    />
+                    4.7
+                    <span
+                      style="
+                        color: #4e5562;
+                        font-weight: 400;
+                        line-height: 21px;
+                        font-size: 12px;
+                        font-family: inter;
+                      "
+                      >(95)</span
+                    >
+                  </div>
+                  <div style="font-weight: 100">From $1,890</div>
+                </div>
+              </div>
+
+              <div class="popularProjectsCard">
+                <div class="popularProjectsImageContainer">
+                  <img
+                    src="assets/images/Popular_projects/decksAndPorches.webp"
+                    alt=""
+                  />
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.3rem">
+                  <div class="popularProjectsTitle">Decks & porches</div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      font-weight: 100;
+                      color: #4e5562;
+                      gap: 0.3rem;
+                    "
+                  >
+                    <img
+                      width="16px"
+                      src="assets/images/goldenStar.svg"
+                      alt=""
+                    />
+                    4.7
+                    <span
+                      style="
+                        color: #4e5562;
+                        font-weight: 400;
+                        line-height: 21px;
+                        font-size: 12px;
+                        font-family: inter;
+                      "
+                      >(95)</span
+                    >
+                  </div>
+                  <div style="font-weight: 100">From $1,890</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="promo-image">
-        <img src="assets/images/app/app-cta.png" alt="Finder App">
-      </div>
-    </div>
-</section>
+      </section>
 
+      <section style="display: flex; justify-content: center; width: 100%">
+        <div
+          style="display: flex; flex-direction: column; width: 86%; gap: 2rem"
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+            "
+          >
+            <div class="PopularProjectsTitle">Popular home projects</div>
+            <div><a href="#" class="view-all">View all &rarr;</a></div>
+          </div>
+          <div class="projects-cards-container">
+            <div class="projects-cards-wrapper">
+              <div class="project-card">
+                <div style="position: relative; overflow: hidden">
+                  <div class="card-image">
+                    <img
+                      width="100%"
+                      height="100%"
+                      src="assets/images/popularHomeProjects/onetimeCleaningService.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="popularHomeCardTitle">
+                    One-time cleaning service
+                  </div>
+                  <button class="favorite-btn" aria-label="Favorite">
+                    &#9825;
+                  </button>
+                </div>
 
+                <div class="card-details">
+                  <div class="rating">
+                    <span class="star"
+                      ><img
+                        width="16px"
+                        src="assets/images/goldenStar.svg"
+                        alt="" /></span
+                    >4.9 <span class="review-count">(256)</span>
+                  </div>
+                  <div class="price">From $80</div>
+                  <button class="book-btn">Book now</button>
+                </div>
+              </div>
 
+              <div class="project-card">
+                <div style="position: relative; overflow: hidden">
+                  <div class="card-image">
+                    <img
+                      width="100%"
+                      height="100%"
+                      src="assets/images/popularHomeProjects/handyperson.avif"
+                      alt=""
+                    />
+                  </div>
+                  <div class="popularHomeCardTitle">
+                    Handyperson for small Projects
+                  </div>
+                  <button class="favorite-btn" aria-label="Favorite">
+                    &#9825;
+                  </button>
+                </div>
 
+                <div class="card-details">
+                  <div class="rating">
+                    <span class="star"
+                      ><img
+                        width="16px"
+                        src="assets/images/goldenStar.svg"
+                        alt="" /></span
+                    >4.7 <span class="review-count">(63)</span>
+                  </div>
+                  <div class="price">From $250</div>
+                  <button class="book-btn">Book now</button>
+                </div>
+              </div>
 
+              <div class="project-card">
+                <div style="position: relative; overflow: hidden">
+                  <div class="card-image">
+                    <img
+                      width="100%"
+                      height="100%"
+                      src="assets/images/popularHomeProjects/fenceInstallation.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="popularHomeCardTitle">
+                    Fence installation & repair
+                  </div>
+                  <button class="favorite-btn" aria-label="Favorite">
+                    &#9825;
+                  </button>
+                </div>
 
+                <div class="card-details">
+                  <div class="rating">
+                    <span class="star"
+                      ><img
+                        width="16px"
+                        src="assets/images/goldenStar.svg"
+                        alt="" /></span
+                    >4.8 <span class="review-count">(29)</span>
+                  </div>
+                  <div class="price">From $310</div>
+                  <button class="book-btn">Book now</button>
+                </div>
+              </div>
+            </div>
 
-
-
-
-
-
-<section style="display: flex; justify-content: center; width: 100%; padding-bottom: 6rem;">
-  <div style="display: flex; flex-direction: column; width: 86%; gap: 2rem;">
-    <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; align-items: center;">
-      <div class="PopularProjectsTitle">Common pricing references</div>
-      <div><a href="#" class="view-all">View all &rarr;</a></div>
-    </div>
-    <div class="common-pricing-container">
-  <div class="advice-card">
-    <div class="comingImage-container">
-      <img src="assets/images/common_pricing_references/biogeneralco-218x150.jpg" alt="Cleanliness">
-    </div>
-    <div class="coming-content">
-      <div class="coming-title">Cleaning up after repairs</div>
-      <div class="comingCard-details">
-        <div style="display: flex; flex-direction: row;">
-          <div class="rating"><span class="star"><img width="16px" src="assets/images/goldenStar.svg" alt=""></span>4.5 <span class="review-count">(63)</span></div>
-          <div class="price">From $150</div>
+            <div class="pagination-dots"></div>
+          </div>
         </div>
-        <button class="book-btn" style="width: fit-content;">Book now</button>
-      </div>
-    </div>
-  </div>
+      </section>
 
-  <div class="advice-card">
-    <div class="comingImage-container">
-      <img src="assets/images/common_pricing_references/roof.jpg" alt="Cleanliness">
-    </div>
-    <div class="coming-content">
-      <div class="coming-title">installation of flat roofs</div>
-      <div class="comingCard-details">
-        <div style="display: flex; flex-direction: row;">
-          <div class="rating"><span class="star"><img width="16px" src="assets/images/goldenStar.svg" alt=""></span>4.3 <span class="review-count">(18)</span></div>
-          <div class="price">From $1,870</div>
+      <section
+        style="
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          background-color: #f5f7fa;
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        "
+      >
+        <div
+          style="display: flex; flex-direction: column; width: 86%; gap: 2rem"
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+            "
+          >
+            <div class="PopularProjectsTitle">Expert advice</div>
+            <div><a href="#" class="view-all">View all &rarr;</a></div>
+          </div>
+          <div class="expert-advice-container">
+            <div class="advice-card">
+              <div class="image-container">
+                <img
+                  src="assets/images/expertAdvice/cleanliness.jpg"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="advice-content">
+                <div class="advice-category">Cleaning</div>
+                <div class="advice-title">
+                  Expert advice from masters of cleanliness
+                </div>
+                <div class="advice-description">
+                  Unlock the secrets to a spotless home with tips from cleaning
+                  professionals. From tackling stubborn...
+                </div>
+                <div class="advice-date">Oct 19, 2024</div>
+              </div>
+            </div>
+
+            <div class="advice-card">
+              <div class="image-container">
+                <img
+                  src="assets/images/expertAdvice/flooring.webp"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="advice-content">
+                <div class="advice-category">Flooring</div>
+                <div class="advice-title">
+                  How to quickly clean laminate flooring
+                </div>
+                <div class="advice-description">
+                  Learn the fastest and most effective methods to clean laminate
+                  flooring without damaging its surface...
+                </div>
+                <div class="advice-date">Sep 13, 2024</div>
+              </div>
+            </div>
+
+            <div class="advice-card">
+              <div class="image-container">
+                <img
+                  src="assets/images/expertAdvice/air_conditioning.jpg"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="advice-content">
+                <div class="advice-category">Air Conditioning</div>
+                <div class="advice-title">
+                  Choose air conditioner with air ionization
+                </div>
+                <div class="advice-description">
+                  Explore the benefits of air conditioners with air ionization
+                  technology. Find out how these units improve air...
+                </div>
+                <div class="advice-date">Sep 05, 2024</div>
+              </div>
+            </div>
+
+            <div class="advice-card">
+              <div class="image-container">
+                <img
+                  src="assets/images/expertAdvice/landscaping.jpg"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="advice-content">
+                <div class="advice-category">Landscaping</div>
+                <div class="advice-title">
+                  Landscaping ideas from top local experts
+                </div>
+                <div class="advice-description">
+                  Get inspired by creative landscaping ideas from the best local
+                  experts. Whether you're revamping your garden...
+                </div>
+                <div class="advice-date">Aug 26, 2024</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <button class="book-btn" style="width: fit-content;">Book now</button>
-      </div>
-    </div>
-  </div>
+      </section>
 
-  <div class="advice-card">
-    <div class="comingImage-container">
-      <img src="assets/images/popularHomeProjects/fenceInstallation.jpg" alt="Cleanliness">
-    </div>
-    <div class="coming-content">
-      <div class="coming-title">Handyperson for small projects</div>
-      <div class="comingCard-details">
-        <div style="display: flex; flex-direction: row;">
-          <div class="rating"><span class="star"><img width="16px" src="assets/images/goldenStar.svg" alt=""></span>4.7 <span class="review-count">(35)</span></div>
-          <div class="price">From $230</div>
+      <section class="how-it-works">
+        <div style="width: 86%; gap: 2rem">
+          <div
+            style="
+              font-family: inter;
+              font-weight: 600;
+              font-size: 32px;
+              line-height: 40px;
+              color: rgb(17, 24, 39);
+            "
+          >
+            How it works
+          </div>
+          <p
+            style="
+              font-family: inter;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 27px;
+              color: rgb(78, 85, 98);
+            "
+          >
+            Effortlessly find, connect, and hire the perfect contractor for your
+            job - all in just three easy steps.
+          </p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/howItWorks/explore.png" alt="Explore" />
+                <h3 class="howItWorksCardH3">Explore</h3>
+                <p class="howItWorksCardParagraph">
+                  Browse through our curated list of contractors.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/howItWorks/connect.png" alt="Connect" />
+                <h3 class="howItWorksCardH3">Connect</h3>
+                <p class="howItWorksCardParagraph">
+                  Connect with them through our platform.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/howItWorks/quotes.png"
+                  alt="Get quotes and hire"
+                />
+                <h3 class="howItWorksCardH3">Get quotes and hire</h3>
+                <p class="howItWorksCardParagraph">
+                  Receive quotes from interested contractors.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-        <button class="book-btn" style="width: fit-content;">Book now</button>
-      </div>
-    </div>
-  </div>
+      </section>
 
-  <div class="advice-card">
-    <div class="comingImage-container">
-      <img src="assets/images/common_pricing_references/one_time_cleaning.jpeg" alt="Cleanliness">
-    </div>
-    <div class="coming-content">
-      <div class="coming-title">One-time cleaning service</div>
-      <div class="comingCard-details">
-        <div style="display: flex; flex-direction: row;">
-          <div class="rating"><span class="star"><img width="16px" src="assets/images/goldenStar.svg" alt=""></span>4.9 <span class="review-count">(127)</span></div>
-          <div class="price">From $120</div>
+      <section
+        style="
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding-bottom: 1.5rem;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            height: 33rem;
+          "
+        >
+          <div class="addBusiness-rightSide">
+            <div style="display: flex; flex-direction: column; gap: 1.5rem">
+              <div
+                style="
+                  font-family: inter;
+                  font-weight: 600;
+                  font-size: 32px;
+                  line-height: 40px;
+                  color: white;
+                "
+              >
+                Grow your business with us.<br />Become a Pro today
+              </div>
+              <div style="display: flex; flex-direction: row; gap: 0.7rem">
+                <button class="AddBusiness-button">
+                  <img
+                    width="20px"
+                    height="20px"
+                    src="../assets/images/plus.svg"
+                    alt=""
+                  />
+                  <span
+                    style="
+                      font-family: inter;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 18px;
+                      color: white;
+                      padding: 0.5rem;
+                    "
+                    >Add business</span
+                  >
+                </button>
+                <button class="learnMore-button">
+                  <span
+                    style="
+                      font-family: inter;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 18px;
+                    "
+                    >Learn more</span
+                  >
+                  <svg
+                    class="learnMorePlusSVG"
+                    width="15px"
+                    height="15px"
+                    viewBox="0 0 1024 1024"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="addBusinessImage" style="width: 50%; height: 100%">
+            <img
+              height="100%"
+              width="100%"
+              src="assets/images/DIY-Tools-Hero-1203753494.webp"
+              alt=""
+            />
+          </div>
         </div>
-        <button class="book-btn" style="width: fit-content;">Book now</button>
-      </div>
-    </div>
-  </div>
+      </section>
 
-
-</div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<footer class="footer">
-    <div class="footer-top">
-      <div class="newsletter">
-        <span style="display: flex; flex-direction: row; align-items: center; gap: 0.5rem; font-family: inter; font-size: 20px; font-weight: 600; line-height: 27px;"><img width="30px" src="assets/images/email-1-svgrepo-com.svg" alt=""> Subscribe to our newsletter</span>
-        <button>Subscribe</button>
-      </div>
-      <div class="contact-section">
-        <span>Need help?</span>
-        <a href="#">Contact us</a>
-      </div>
-    </div>
-    <div class="footer-content">
-      <div class="footer-col">
-        <div class="logoContainer">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34"><path d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z" fill="#D85151"></path><g fill-rule="evenodd"><path d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z" fill="#000" fill-opacity=".05"></path><g fill="#fff"><path d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z"></path><path d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z"></path></g></g><path d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z" fill="#fff"></path><path fill-rule="evenodd" d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z" fill="#D85151"></path></svg>
+      <section style="display: flex; justify-content: center; width: 100%">
+        <div class="app-promo">
+          <div class="promo-content">
+            <h2>Get Finder App</h2>
+            <p>Explore top-rated certified pros</p>
+            <div class="app-buttons">
+              <button class="app-store">
+                <img
+                  width="24px"
+                  src="assets/images/app/apple-173-svgrepo-com.svg"
+                  alt=""
+                />App Store
+              </button>
+              <button class="google-play">
+                <img
+                  width="24px"
+                  src="assets/images/app/google-play-svgrepo-com.svg"
+                  alt=""
+                />Google Play
+              </button>
+            </div>
+          </div>
+          <div class="promo-image">
+            <img src="assets/images/app/app-cta.png" alt="Finder App" />
+          </div>
         </div>
-        <div style="color:white;">Finder</div>
-      </div>
-        <p style="font-family: inter; font-size:14x; font-weight: 400; line-height: 21px; color: rgb(156, 163, 175);">Connecting you with reliable local<br>contractors for all your service needs.</p>
-        <div class="social-icons">
-          <a href="#"><img width="15px" src="assets/images/footer/instagram-svgrepo-com.svg" alt=""></a>
-          <a href="#"><img width="15px" src="assets/images/footer/facebook-svgrepo-com.svg" alt=""></a>
-          <a href="#"><img width="15px" src="assets/images/footer/icons8-x-30.png" alt=""></a>
+      </section>
+
+      <section
+        style="
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding-bottom: 6rem;
+        "
+      >
+        <div
+          style="display: flex; flex-direction: column; width: 86%; gap: 2rem"
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+            "
+          >
+            <div class="PopularProjectsTitle">Common pricing references</div>
+            <div><a href="#" class="view-all">View all &rarr;</a></div>
+          </div>
+          <div class="common-pricing-container">
+            <div class="advice-card">
+              <div class="comingImage-container">
+                <img
+                  src="assets/images/common_pricing_references/biogeneralco-218x150.jpg"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="coming-content">
+                <div class="coming-title">Cleaning up after repairs</div>
+                <div class="comingCard-details">
+                  <div style="display: flex; flex-direction: row">
+                    <div class="rating">
+                      <span class="star"
+                        ><img
+                          width="16px"
+                          src="assets/images/goldenStar.svg"
+                          alt="" /></span
+                      >4.5 <span class="review-count">(63)</span>
+                    </div>
+                    <div class="price">From $150</div>
+                  </div>
+                  <button class="book-btn" style="width: fit-content">
+                    Book now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="advice-card">
+              <div class="comingImage-container">
+                <img
+                  src="assets/images/common_pricing_references/roof.jpg"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="coming-content">
+                <div class="coming-title">installation of flat roofs</div>
+                <div class="comingCard-details">
+                  <div style="display: flex; flex-direction: row">
+                    <div class="rating">
+                      <span class="star"
+                        ><img
+                          width="16px"
+                          src="assets/images/goldenStar.svg"
+                          alt="" /></span
+                      >4.3 <span class="review-count">(18)</span>
+                    </div>
+                    <div class="price">From $1,870</div>
+                  </div>
+                  <button class="book-btn" style="width: fit-content">
+                    Book now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="advice-card">
+              <div class="comingImage-container">
+                <img
+                  src="assets/images/popularHomeProjects/fenceInstallation.jpg"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="coming-content">
+                <div class="coming-title">Handyperson for small projects</div>
+                <div class="comingCard-details">
+                  <div style="display: flex; flex-direction: row">
+                    <div class="rating">
+                      <span class="star"
+                        ><img
+                          width="16px"
+                          src="assets/images/goldenStar.svg"
+                          alt="" /></span
+                      >4.7 <span class="review-count">(35)</span>
+                    </div>
+                    <div class="price">From $230</div>
+                  </div>
+                  <button class="book-btn" style="width: fit-content">
+                    Book now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="advice-card">
+              <div class="comingImage-container">
+                <img
+                  src="assets/images/common_pricing_references/one_time_cleaning.jpeg"
+                  alt="Cleanliness"
+                />
+              </div>
+              <div class="coming-content">
+                <div class="coming-title">One-time cleaning service</div>
+                <div class="comingCard-details">
+                  <div style="display: flex; flex-direction: row">
+                    <div class="rating">
+                      <span class="star"
+                        ><img
+                          width="16px"
+                          src="assets/images/goldenStar.svg"
+                          alt="" /></span
+                      >4.9 <span class="review-count">(127)</span>
+                    </div>
+                    <div class="price">From $120</div>
+                  </div>
+                  <button class="book-btn" style="width: fit-content">
+                    Book now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footerRightLinks">
-        <div style="display: flex; flex-direction: row;">
+      </section>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="newsletter">
+            <span
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.5rem;
+                font-family: inter;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 27px;
+              "
+              ><img
+                width="30px"
+                src="assets/images/email-1-svgrepo-com.svg"
+                alt=""
+              />
+              Subscribe to our newsletter</span
+            >
+            <button>Subscribe</button>
+          </div>
+          <div class="contact-section">
+            <span>Need help?</span>
+            <a href="#">Contact us</a>
+          </div>
+        </div>
+        <div class="footer-content">
           <div class="footer-col">
-          <h3 class="footerH3">Popular categories</h3>
-          <a href="#">Air conditioning</a>
-          <a href="#">Painting</a>
-          <a href="#">Electrician</a>
-          <a href="#">Concrete</a>
-          <a href="#">Plumbing</a>
-          <a href="#">Roofing</a>
+            <div class="logoContainer">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34">
+                  <path
+                    d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z"
+                    fill="#D85151"
+                  ></path>
+                  <g fill-rule="evenodd">
+                    <path
+                      d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z"
+                      fill="#000"
+                      fill-opacity=".05"
+                    ></path>
+                    <g fill="#fff">
+                      <path
+                        d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z"
+                      ></path>
+                      <path
+                        d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z"
+                      ></path>
+                    </g>
+                  </g>
+                  <path
+                    d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z"
+                    fill="#D85151"
+                  ></path>
+                </svg>
+              </div>
+              <div style="color: white">Finder</div>
+            </div>
+            <p
+              style="
+                font-family: inter;
+                font-size: 14x;
+                font-weight: 400;
+                line-height: 21px;
+                color: rgb(156, 163, 175);
+              "
+            >
+              Connecting you with reliable local<br />contractors for all your
+              service needs.
+            </p>
+            <div class="social-icons">
+              <a href="#"
+                ><img
+                  width="15px"
+                  src="assets/images/footer/instagram-svgrepo-com.svg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  width="15px"
+                  src="assets/images/footer/facebook-svgrepo-com.svg"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  width="15px"
+                  src="assets/images/footer/icons8-x-30.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="footerRightLinks">
+            <div style="display: flex; flex-direction: row">
+              <div class="footer-col">
+                <h3 class="footerH3">Popular categories</h3>
+                <a href="#">Air conditioning</a>
+                <a href="#">Painting</a>
+                <a href="#">Electrician</a>
+                <a href="#">Concrete</a>
+                <a href="#">Plumbing</a>
+                <a href="#">Roofing</a>
+              </div>
+              <div class="footer-col">
+                <h3>&nbsp;</h3>
+                <a href="#">Cleaning</a>
+                <a href="#">Heating & furnace</a>
+                <a href="#">Carpentry</a>
+                <a href="#">Flooring</a>
+                <a href="#">Pest control</a>
+                <a href="#">Landscaping</a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h3 class="footerH3">Company</h3>
+              <a href="#">About</a>
+              <a href="#">Press & announcements</a>
+              <a href="#">Careers at Finder</a>
+              <a href="#">Contact us</a>
+              <a href="#">Terms of use</a>
+              <a href="#">Privacy</a>
+            </div>
+          </div>
         </div>
-        <div class="footer-col">
-          <h3>&nbsp;</h3>
-          <a href="#">Cleaning</a>
-          <a href="#">Heating & furnace</a>
-          <a href="#">Carpentry</a>
-          <a href="#">Flooring</a>
-          <a href="#">Pest control</a>
-          <a href="#">Landscaping</a>
+        <div class="footer-bottom">
+          <div class="cities">
+            <div
+              style="
+                font-family: inter;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 27px;
+                padding-right: 1rem;
+              "
+            >
+              Top cities
+            </div>
+            <span class="city-btn">New York</span>
+            <span class="city-btn">Chicago</span>
+            <span class="city-btn">Indianapolis</span>
+            <span class="city-btn">Boston</span>
+            <span class="city-btn">Atlanta</span>
+            <span class="city-btn">Cincinnati</span>
+            <span class="city-btn">Los Angeles</span>
+            <span class="city-btn">Dallas</span>
+            <span class="city-btn">Pittsburgh</span>
+            <span class="city-btn">Tampa</span>
+          </div>
+          <div class="rightsContainer">
+            <div class="rights">
+              © All rights reserved. Made by <span>Createx Studio</span>
+            </div>
+            <div class="payments">
+              <img
+                width="40px"
+                src="assets/images/footer/visa-svgrepo-com.svg"
+                alt="Visa"
+              />
+              <img
+                width="40px"
+                src="assets/images/footer/mastercard-svgrepo-com.svg"
+                alt="Visa"
+              />
+              <img
+                width="50px"
+                src="assets/images/footer/paypal-svgrepo-com.svg"
+                alt="Visa"
+              />
+              <img
+                width="40px"
+                src="https://img.icons8.com/?size=100&id=XYVoikUs9vba&format=png&color=000000"
+                alt="GPay"
+              />
+              <img
+                width="50px"
+                src="assets/images/footer/brand-apple-pay-svgrepo-com.svg"
+                alt="Visa"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footer-col">
-        <h3 class="footerH3">Company</h3>
-        <a href="#">About</a>
-        <a href="#">Press & announcements</a>
-        <a href="#">Careers at Finder</a>
-        <a href="#">Contact us</a>
-        <a href="#">Terms of use</a>
-        <a href="#">Privacy</a>
-      </div>
-      </div>
-      
+      </footer>
     </div>
-    <div class="footer-bottom">
-      <div class="cities">
-        <div style="font-family: inter; font-weight: 600; font-size: 20px; line-height: 27px; padding-right: 1rem;">Top cities</div>
-        <span class="city-btn">New York</span>
-        <span class="city-btn">Chicago</span>
-        <span class="city-btn">Indianapolis</span>
-        <span class="city-btn">Boston</span>
-        <span class="city-btn">Atlanta</span>
-        <span class="city-btn">Cincinnati</span>
-        <span class="city-btn">Los Angeles</span>
-        <span class="city-btn">Dallas</span>
-        <span class="city-btn">Pittsburgh</span>
-        <span class="city-btn">Tampa</span>
-      </div>
-      <div class="rightsContainer">
-        <div class="rights">© All rights reserved. Made by <span>Createx Studio</span></div>
-        <div class="payments">
-          <img width="40px" src="assets/images/footer/visa-svgrepo-com.svg" alt="Visa">
-          <img width="40px" src="assets/images/footer/mastercard-svgrepo-com.svg" alt="Visa">
-          <img width="50px" src="assets/images/footer/paypal-svgrepo-com.svg" alt="Visa">
-          <img width="40px" src="https://img.icons8.com/?size=100&id=XYVoikUs9vba&format=png&color=000000" alt="GPay">
-          <img width="50px" src="assets/images/footer/brand-apple-pay-svgrepo-com.svg" alt="Visa">
-        </div>
-      </div>
-    </div>
-  </footer>
 
-
-
-
-
-
-
-
-</div>
-
-  <script src="js/navbar.js"></script>
-  <script src="js/home-contractors.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      600: {
-        slidesPerView: 2,
-      },
-      900: {
-        slidesPerView: 3,
-      }
-    }
-  });
-  </script>
-</body>
+    <script src="js/navbar.js"></script>
+    <script src="js/home-contractors.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>

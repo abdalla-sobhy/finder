@@ -218,6 +218,22 @@ html {
   gap: 20px;
   height: 72%;
 }
+.custom-text-wrapper {
+  display: inline-block;
+  position: relative;
+}
+.custom-underline {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.service-item:hover .custom-underline{
+  display: block;
+}
 
 .service-item {
   display: flex;
@@ -231,9 +247,9 @@ html {
 .service-item span {
   cursor: pointer;
 }
-.service-item span:hover {
+/* .service-item span:hover {
   text-decoration: underline;
-}
+} */
 .service-item:hover {
   background-color: #f5f5f5;
 }
