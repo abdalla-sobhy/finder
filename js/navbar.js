@@ -8,13 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
       navListItems.forEach(item => {
         item.addEventListener('mouseover', () => {
           if (!item.classList.contains('home')) {
-            document.querySelector('.home').style.backgroundColor = '#fff';
+            if (document.body.classList.contains("dark-theme")) {
+              document.querySelector('.home').style.backgroundColor = '#111827';
+            } else {
+              document.querySelector('.home').style.backgroundColor = '#fff';
+            }
           }
         });
 
         item.addEventListener('mouseout', () => {
           if (!item.classList.contains('home')) {
-            document.querySelector('.home').style.backgroundColor = '#F2F3F5';
+            if (document.body.classList.contains("dark-theme")) {
+              document.querySelector('.home').style.backgroundColor = '#242A38';
+            } else {
+              document.querySelector('.home').style.backgroundColor = '#F2F3F5';
+            }
           }
         });
       });
@@ -88,13 +96,21 @@ document.addEventListener('DOMContentLoaded', () => {
     menuOptions.forEach(item => {
       item.addEventListener('mouseover', () => {
         if (!item.classList.contains('menuHome')) {
-          document.querySelector('.menuHome').style.backgroundColor = '#fff';
+          if (document.body.classList.contains("dark-theme")) {
+              document.querySelector('.menuHome').style.backgroundColor = '#111827';
+            } else {
+              document.querySelector('.menuHome').style.backgroundColor = '#fff';
+            }
         }
       });
 
       item.addEventListener('mouseout', () => {
         if (!item.classList.contains('menuHome')) {
-          document.querySelector('.menuHome').style.backgroundColor = '#F2F3F5';
+          if (document.body.classList.contains("dark-theme")) {
+              document.querySelector('.menuHome').style.backgroundColor = '#242A38';
+            } else {
+              document.querySelector('.menuHome').style.backgroundColor = '#F2F3F5';
+            }
         }
       });
     });
@@ -151,9 +167,42 @@ hoverBridge.addEventListener('mouseleave', hideSideImg);
 
 
 
+function ToggleTheme() {
+  document.body.classList.toggle('dark-theme');
+
+  
 
 
 
+
+  const profileIcon = document.querySelector('#profileIcon')
+  const themIcon = document.querySelector('#themIcon')
+  const downArrowImg = document.querySelectorAll('#downArrowImg')
+  const menuImg = document.querySelector('#menuImg')
+  
+  if (document.body.classList.contains("dark-theme")) {
+    themIcon.src = "../assets/images/themChangerDarkMode.svg"
+    profileIcon.src = "../assets/images/profileIconDarkMode.svg";
+    menuImg.src = "../assets/images/menuDarkMode.svg"
+    downArrowImg.forEach(arrow => {
+      arrow.src = "../assets/images/downArrowDarkMode.svg"
+    });
+    document.querySelector('.home').style.backgroundColor = '#242A38';
+    document.querySelector('.menuHome').style.backgroundColor = '#242A38';
+  } else {
+    themIcon.src = "../assets/images/themChanger.svg"
+    profileIcon.src = "../assets/images/profileIcon.svg";
+    menuImg.src = "../assets/images/menu.svg"
+    downArrowImg.forEach(arrow => {
+      arrow.src = "../assets/images/downArrow.svg"
+    });
+    document.querySelector('.home').style.backgroundColor = '#F2F3F5';
+    document.querySelector('.menuHome').style.backgroundColor = '#F2F3F5';
+  }
+  
+}
+
+document.querySelector('#themIcon').addEventListener('click', ToggleTheme);
 
     });
 });

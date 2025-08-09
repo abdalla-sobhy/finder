@@ -5,6 +5,9 @@ body {
   flex-direction: column;
   height: fit-content;
 }
+body.dark-theme {
+  background-color: #111827;
+}
 html {
   height: fit-content;
 }
@@ -175,7 +178,10 @@ html {
   background-color: white;
   width: 86%;
 }
-
+body.dark-theme .services-grid{
+  color: white;
+  background-color: #111827;
+}
 .grid-headerContainer {
   align-items: center;
   margin-bottom: 20px;
@@ -195,14 +201,18 @@ html {
   line-height: 40px;
   margin: 0;
 }
-
+body.dark-theme .grid-header h2{
+  color: white;
+}
 .view-all {
   font-size: 16px;
   text-decoration: none;
   transition: color 0.3s;
   color: black;
 }
-
+body.dark-theme .view-all{
+  color: white;
+}
 .view-all:hover {
   text-decoration: underline;
 }
@@ -231,6 +241,9 @@ html {
   left: 0;
   display: none;
 }
+body.dark-theme .custom-underline{
+  background-color: white;
+}
 .service-item:hover .custom-underline{
   display: block;
 }
@@ -253,7 +266,9 @@ html {
 .service-item:hover {
   background-color: #f5f5f5;
 }
-
+body.dark-theme .service-item:hover{
+  background-color: #242a38;
+}
 .icon {
   width: 40px;
   height: 40px;
@@ -285,6 +300,20 @@ html {
   width: 20%;
   cursor: pointer;
 }
+body.dark-theme .getMatched{
+  background-color: #242a38;
+}
+#getMatchedTitle{
+  font-family: inter;
+  font-weight: 600;
+  color: rgb(17, 24, 39);
+  font-size: 28px;
+  line-height: 36px;
+  padding-bottom: 0.5rem;
+}
+body.dark-theme #getMatchedTitle{
+  color: white;
+}
 .popularProjectsCard {
   display: flex;
   flex-direction: row;
@@ -299,6 +328,15 @@ html {
   font-size: 16px;
   line-height: 22px;
 }
+.cardPrice{
+  font-weight: 100;
+}
+body.dark-theme .cardPrice{
+  color: white;
+}
+body.dark-theme .popularProjectsTitle{
+  color: white;
+}               
 .popularProjectsTitle:hover {
   text-decoration: underline;
 }
@@ -325,7 +363,9 @@ html {
   line-height: 40px;
   font-size: clamp(23px, 2vw, 32px);
 }
-
+body.dark-theme .PopularProjectsTitle{
+  color: white;
+}
 .projects-cards-container {
   position: relative;
   overflow: hidden;
@@ -397,8 +437,13 @@ html {
   justify-content: space-between;
   gap: 0.5rem;
   flex-wrap: nowrap;
+  border: 1px solid white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
-
+body.dark-theme .card-details{
+  background-color: #111827;
+}
 .rating {
   display: flex;
   align-items: center;
@@ -406,7 +451,9 @@ html {
   flex-shrink: 0;
   padding-right: 1rem;
 }
-
+body.dark-theme .rating{
+  color: white;
+}
 .star {
   color: #f97316;
 }
@@ -422,7 +469,9 @@ html {
   font-family: inter;
   font-weight: 300;
 }
-
+body.dark-theme .price{
+  color: white;
+}
 .book-btn {
   padding: 0.4rem 1rem;
   border: 1px solid #333;
@@ -433,12 +482,16 @@ html {
   white-space: nowrap;
   transition: background 0.3s ease, color 0.3s ease;
 }
-
+body.dark-theme .book-btn{
+  color: white;
+}
 .book-btn:hover {
   background: #333;
   color: white;
 }
-
+body.dark-theme .book-btn:hover{
+  background-color: #242a38;
+}
 .pagination-dots {
   text-align: center;
   margin-top: 0.25rem;
@@ -449,7 +502,17 @@ html {
     display: block;
   }
 }
-
+#expertAdviceSection{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f5f7fa;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+body.dark-theme #expertAdviceSection{
+  background-color: #1D2735;
+}
 .pagination-dots button {
   background: #ddd;
   border-radius: 50%;
@@ -561,7 +624,19 @@ html {
   color: rgb(17, 24, 39);
   line-height: 27px;
 }
-
+body.dark-theme .advice-title{
+  color: white;
+}
+.howItWorks{
+  font-family: inter;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: rgb(17, 24, 39);
+}
+body.dark-theme .howItWorks{
+  color: white;
+}
 .advice-description {
   font-size: 0.9rem;
   color: #4b5563;
@@ -603,6 +678,9 @@ html {
   line-height: 27px;
   color: rgb(17, 24, 39);
   padding: 0;
+}
+body.dark-theme .howItWorksCardH3{
+  color: white;
 }
 .howItWorksCardParagraph {
   font-family: inter;
@@ -728,7 +806,9 @@ html {
   overflow: hidden;
   height: 100%;
 }
-
+body.dark-theme .app-promo{
+  background-color: #251E2B;
+}
 .promo-content {
   color: #111;
   max-width: 40%;
@@ -743,7 +823,9 @@ html {
   margin-bottom: 10px;
   color: rgb(17, 24, 39);
 }
-
+body.dark-theme .promo-content h2{
+  color: white;
+}
 .promo-content p {
   font-family: inter;
   font-weight: 400;
@@ -825,6 +907,9 @@ html {
   margin: 0.5rem 0;
   color: rgb(17, 24, 39);
   line-height: 27px;
+}
+body.dark-theme .coming-title{
+  color: white;
 }
 .comingCard-details {
   display: flex;

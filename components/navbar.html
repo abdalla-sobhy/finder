@@ -2,18 +2,18 @@
   <div class="navbar-container">
     <div class="navbar">
       <div class="menuIcon">
-          <img width="100%" height="100%" src="../assets/images/menu.svg" alt="menu">
+          <img id="menuImg" width="100%" height="100%" src="../assets/images/menu.svg" alt="menu">
         </div>
       <div class="logoContainer">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34"><path d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z" fill="#D85151"></path><g fill-rule="evenodd"><path d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z" fill="#000" fill-opacity=".05"></path><g fill="#fff"><path d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z"></path><path d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z"></path></g></g><path d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z" fill="#fff"></path><path fill-rule="evenodd" d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z" fill="#D85151"></path></svg>
         </div>
-        <div>Finder</div>
+        <div id="finder">Finder</div>
       </div>
       <ul class="nav-list">
   <li class="home">
     <a href="#">Home</a>
-    <img height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
+    <img id="downArrowImg" height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
     <div class="dropdown-menu-div">
 
       <div class="hover-bridge"></div>
@@ -36,7 +36,7 @@
   </li>
   <li>
     <a href="#">Listings</a>
-    <img height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
+    <img id="downArrowImg" height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
     <div class="dropdown-menu-div" style="left: -6rem;">
       <div>
           <ul class="dropdown-menu">
@@ -63,94 +63,94 @@
   </li>
   <li>
     <a href="#">Account</a>
-    <img height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
+    <img id="downArrowImg" height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
     <div class="dropdown-menu-div">
       <ul class="dropdown-menu" style="position: relative;">
-        <li><div class="homedropdownoption moreoptions"><div style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px; display: flex; flex-direction:row; gap:3rem; justify-content: space-between; width: 100%;" href="#"><div>Auth Pages</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
+        <li><div class="homedropdownoption moreoptions"><div class="innerMenuOptions" href="#"><div>Auth Pages</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
         <div class="innersidemenu">
       <ul class="dropdown-menu" style="position: relative;">
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Sign In</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Sign Up</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Password Recovery</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Sign In</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Sign Up</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Password Recovery</a></div></li>
       </ul>
       </div>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">My Profile</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">My Listings</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Reviews</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Favorites</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">payment Details</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Account Settings</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">My Profile</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">My Listings</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Reviews</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Favorites</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">payment Details</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Account Settings</a></div></li>
       </ul>
       
     </div>
   </li>
   <li>
     <a href="#">Pages</a>
-    <img height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
+    <img id="downArrowImg" height="15px" width="15px" src="../assets/images/downArrow.svg" alt="">
     <div class="dropdown-menu-div">
       <ul class="dropdown-menu" style="position: relative;">
         
-        <li><div class="homedropdownoption aboutoptions"><div style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px; display: flex; flex-direction:row; gap:3rem; justify-content: space-between; width: 100%;" href="#"><div>About</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
+        <li><div class="homedropdownoption aboutoptions"><div class="innerMenuOptions" href="#"><div>About</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
         <div class="innersidemenu aboutmenu">
       <ul class="dropdown-menu" style="position: relative;">
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">About v.1</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">About v.2</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">About v.1</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">About v.2</a></div></li>
       </ul>
       </div>
 
-        <li><div class="homedropdownoption blogoptions"><div style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px; display: flex; flex-direction:row; gap:3rem; justify-content: space-between; width: 100%;" href="#"><div>Blog</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
+        <li><div class="homedropdownoption blogoptions"><div class="innerMenuOptions" href="#"><div>Blog</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
         <div class="innersidemenu blogmenu">
       <ul class="dropdown-menu" style="position: relative;">
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Blog Layout v.1</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Blog Layout v.2</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Blog Layout v.3</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Blog Layout v.4</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Single Post v.1</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Single Post v.2</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Single Post v.3</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Blog Layout v.1</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Blog Layout v.2</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Blog Layout v.3</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Blog Layout v.4</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Single Post v.1</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Single Post v.2</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Single Post v.3</a></div></li>
 
       </ul>
       </div>
 
 
-        <li><div class="homedropdownoption contactoptions"><div style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px; display: flex; flex-direction:row; gap:3rem; justify-content: space-between; width: 100%;" href="#"><div>Contact</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
+        <li><div class="homedropdownoption contactoptions"><div class="innerMenuOptions" href="#"><div>Contact</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
         <div class="innersidemenu contactmenu">
       <ul class="dropdown-menu" style="position: relative;">
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Contact v.1</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Contact v.2</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Contact v.3</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Contact v.1</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Contact v.2</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Contact v.3</a></div></li>
       </ul>
       </div>
 
 
-      <li><div class="homedropdownoption helpoptions"><div style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px; display: flex; flex-direction:row; gap:3rem;" href="#"><div>Help Center</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
+      <li><div class="homedropdownoption helpoptions"><div class="innerMenuOptions" href="#"><div>Help Center</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
         <div class="innersidemenu helpmenu">
       <ul class="dropdown-menu" style="position: relative;">
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Help Topics v.1</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Help Topics v.2</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Help Topics v.3</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Help Single Article v.1</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Help Single Article v.2</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Help Single Article v.3</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Help Topics v.1</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Help Topics v.2</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Help Topics v.3</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Help Single Article v.1</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Help Single Article v.2</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Help Single Article v.3</a></div></li>
 
       </ul>
       </div>
 
 
 
-      <li><div class="homedropdownoption erroroptions"><div style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px; display: flex; flex-direction:row; gap:3rem; justify-content: space-between; width: 100%;" href="#"><div>404 Error</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
+      <li><div class="homedropdownoption erroroptions"><div class="innerMenuOptions" href="#"><div>404 Error</div><div style="width: 10px; height: 10px;"><img width="100%" height="100%" src="../assets/images/rightArrow.svg" alt=""></div></div></div></li>
         <div class="innersidemenu errormenu">
       <ul class="dropdown-menu" style="position: relative;">
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Background Image (Real Estate)</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Icon Image (Cars)</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Split Screen (Contractors)</a></div></li>
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">illustration (City Guide)</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Background Image (Real Estate)</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Icon Image (Cars)</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Split Screen (Contractors)</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">illustration (City Guide)</a></div></li>
 
       </ul>
       </div>
 
 
-        <li><div class="homedropdownoption"><a style="color: rgb(40, 40, 40); text-decoration: none; font-weight: 400; font-size: 15px;" href="#">Terms & Conditions</a></div></li>
+        <li><div class="homedropdownoption"><a href="#">Terms & Conditions</a></div></li>
       </ul>
       
     </div>
@@ -165,10 +165,10 @@
       <div class="navbarButtons">
         <div class="navbarIcons">
           <button>
-            <img height="100%" width="100%" src="../assets/images/themChanger.svg" alt="">
+            <img id="themIcon" height="100%" width="100%" src="../assets/images/themChanger.svg" alt="">
           </button>
           <button>
-            <img height="100%" width="100%" src="../assets/images/profileIcon.svg" alt="">
+            <img id="profileIcon" height="100%" width="100%" src="../assets/images/profileIcon.svg" alt="">
           </button>
         </div>
         <button class="join-button">

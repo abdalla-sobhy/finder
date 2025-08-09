@@ -13,6 +13,9 @@
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
 }
+body.dark-theme .navbar-container {
+  background-color: #111827;
+}
 .logoContainer {
   font-family: inter;
   font-weight: 600;
@@ -24,6 +27,9 @@
   gap: 0.5rem;
   margin-top: 0.3rem;
   cursor: pointer;
+}
+body.dark-theme #finder {
+  color: white;
 }
 .nav-list {
   display: flex;
@@ -62,10 +68,14 @@
   align-items: center;
   gap: 0.32rem;
 }
+
 .nav-list li:hover {
   background-color: #f2f3f5;
 }
-
+body.dark-theme .nav-list li:hover {
+  background-color: #242a38;
+  color: white;
+}
 
 .nav-list a {
   color: rgb(17, 24, 39);
@@ -74,7 +84,9 @@
   font-size: 16px;
   font-family: inter;
 }
-
+body.dark-theme .nav-list a {
+  color: white;
+}
 
 .join-button {
   background-color: #d85151;
@@ -180,6 +192,9 @@
   flex-direction: row !important;
   gap: 2.5rem;
 }
+body.dark-theme .dropdown-menu-div {
+  background-color: #111827;
+}
 .dropdown-menu li {
   padding: 0.5rem 0.5rem 0rem 1rem;
 }
@@ -192,6 +207,9 @@
   display: flex;
   border-radius: 6px;
 }
+body.dark-theme .homedropdownoption{
+  color: white;
+}
 
 .listingsdropdownoption {
   width: 91%;
@@ -201,6 +219,24 @@
 }
 .homedropdownoption:hover {
   background-color: #f2f3f5;
+}
+body.dark-theme .homedropdownoption:hover {
+  background-color: #242a38;
+  color: white;
+}
+.innerMenuOptions {
+  color: rgb(40, 40, 40);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: space-between;
+  width: 100%;
+}
+body.dark-theme .innerMenuOptions{
+  color: white;
 }
 .dropdown-menu li a {
   color: black;
@@ -216,6 +252,9 @@
   font-weight: 600;
   font-size: 20px;
   gap: 1rem;
+}
+body.dark-theme .Listings {
+  color: white;
 }
 .Listings a:hover {
   text-decoration: underline;
@@ -260,6 +299,9 @@
   visibility: hidden;
   padding-bottom: 1rem;
 }
+body.dark-theme .innersidemenu{
+  background-color: #111827;
+}
 .innersidemenu:hover {
   opacity: 1;
   transform: translateY(0);
@@ -298,6 +340,10 @@
   justify-content: center;
   align-items: center;
 }
+body.dark-theme .side-menu{
+  background-color: #111827;
+  color: white;
+}
 .side-menu-div {
   height: 100%;
   width: 90%;
@@ -329,7 +375,9 @@
   cursor: pointer;
   line-height: 1;
 }
-
+body.dark-theme .side-menu-close{
+  color: white;
+}
 .side-menu-list {
   list-style: none;
   padding: 0;
@@ -348,7 +396,9 @@
 .side-menu-list li:hover {
   background-color: #f2f3f5;
 }
-
+body.dark-theme .side-menu-list li:hover{
+  background-color: #242a38;
+}
 .side-menu-list a {
   text-decoration: none;
   color: rgb(17, 24, 39);
@@ -357,7 +407,9 @@
   font-size: 16px;
   display: block;
 }
-
+body.dark-theme .side-menu-list a{
+  color: white;
+}
 .insideHomeMenuContainer {
   padding: 1rem;
   border: 1px solid #dfdfdf;
@@ -383,7 +435,10 @@
 .homeMenuOption:hover {
   background-color: #efefef;
 }
-.homeMenuRealEstateSideImg{
+body.dark-theme .homeMenuOption:hover{
+  background-color: #242a38;
+}
+.homeMenuRealEstateSideImg {
   position: absolute;
   width: 100%;
   height: 100%;
