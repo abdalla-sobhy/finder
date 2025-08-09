@@ -178,12 +178,16 @@ function ToggleTheme() {
   const profileIcon = document.querySelector('#profileIcon')
   const themIcon = document.querySelector('#themIcon')
   const downArrowImg = document.querySelectorAll('#downArrowImg')
+  const rightArrowImg = document.querySelectorAll('#rightArrowImg')
   const menuImg = document.querySelector('#menuImg')
   
   if (document.body.classList.contains("dark-theme")) {
     themIcon.src = "../assets/images/themChangerDarkMode.svg"
     profileIcon.src = "../assets/images/profileIconDarkMode.svg";
     menuImg.src = "../assets/images/menuDarkMode.svg"
+    rightArrowImg.forEach(arrow => {
+      arrow.src = "../assets/images/rightArrowDarkMode.svg"
+    });
     downArrowImg.forEach(arrow => {
       arrow.src = "../assets/images/downArrowDarkMode.svg"
     });
@@ -193,6 +197,9 @@ function ToggleTheme() {
     themIcon.src = "../assets/images/themChanger.svg"
     profileIcon.src = "../assets/images/profileIcon.svg";
     menuImg.src = "../assets/images/menu.svg"
+    rightArrowImg.forEach(arrow => {
+      arrow.src = "../assets/images/rightArrow.svg"
+    });
     downArrowImg.forEach(arrow => {
       arrow.src = "../assets/images/downArrow.svg"
     });
