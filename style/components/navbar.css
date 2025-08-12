@@ -302,11 +302,6 @@ body.dark-theme .Listings {
 body.dark-theme .innersidemenu{
   background-color: #111827;
 }
-.innersidemenu:hover {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
-}
 .menuIcon {
   width: 25px;
   height: 25px;
