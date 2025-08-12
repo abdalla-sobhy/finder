@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           trigger.addEventListener('mouseleave', () => {
             setTimeout(() => {
-              if (!menu.matches(':hover') && !trigger.matches(':hover')) {
+              if (!menu.matches(':hover')) {
                 menu.style.opacity = '';
                 menu.style.transform = '';
                 menu.style.visibility = '';
